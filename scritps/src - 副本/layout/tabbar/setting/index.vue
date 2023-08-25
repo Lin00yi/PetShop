@@ -47,6 +47,7 @@ let $route = useRoute()
 //刷新按钮点击回调
 const updateRefsh = () => {
   layoutSettingStore.refsh = !layoutSettingStore.refsh
+  console.log(layoutSettingStore.refsh)
 }
 //全屏按钮点击的回调
 const fullScreen = () => {

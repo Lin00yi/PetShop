@@ -14,11 +14,11 @@ defineProps({
     default: '#icon-',
   },
   //svg矢量图的名字
-  name: String,
+  name: String, 
   //svg图标的颜色
   color: {
     type: String,
-    default: '',
+    default: '',  
   },
   //svg宽度
   width: {

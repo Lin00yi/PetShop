@@ -27,8 +27,11 @@ let useUserStore = defineStore('User', {
   actions: {
     //用户登录的方法
     async userLogin(data: loginFormData) {
+      
+      console.log("等待登录请求完成")
       //登录请求
       let result: loginResponseData = await reqLogin(data)
+      console.log(result)
       //登录请求:成功200->token
       //登录请求:失败201->登录失败错误的信息
       if (result.code == 200) {
